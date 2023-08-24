@@ -1,8 +1,10 @@
 import "./style.css";
 import "leaflet/dist/leaflet.css";
-import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
+import {MapContainer, TileLayer, Marker, Popup, LayersControl} from "react-leaflet"
 import { Icon, popup } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
+
+const { BaseLayer } = LayersControl;
 
 export default function App() {
   //markers
@@ -72,12 +74,22 @@ export default function App() {
     iconSize: [28, 28],
   });
   return (
-    <MapContainer center={[58.575767, -108.613916]} zoom ={3} scrollWheelZoom={true}>
-      <TileLayer 
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-      
-      />
+    <MapContainer center={[58.575767, -108.613916]} zoom={3} scrollWheelZoom={true}>
+    <LayersControl position="topright">
+        <BaseLayer checked name="OpenStreetMap">
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+        </BaseLayer>
+        <BaseLayer name="OpenTopoMap">
+          <TileLayer
+            attribution='&copy; <a href="https://www.opentopomap.org/">OpenTopoMap</a> contributors'
+            url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+          />
+        </BaseLayer>
+        {/* Add more BaseLayers here as needed */}
+      </LayersControl>
       
 
       <MarkerClusterGroup>
