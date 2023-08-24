@@ -87,6 +87,15 @@ export default function App() {
             attribution='&copy; <a href="https://www.opentopomap.org/">OpenTopoMap</a> contributors'
             url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
           />
+          
+        </BaseLayer>
+
+        <BaseLayer name="World_Imagery">
+          <TileLayer
+            attribution='World_Imagery'
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+          />
+        
         </BaseLayer>
         {/* Add more BaseLayers here as needed */}
       </LayersControl>
