@@ -68,8 +68,6 @@ export default function App() {
       };
     });
   const customIcon = new Icon({
-    //iconUrl: require("./image/arhab.jpeg"),
-    //iconSize: [38, 58],
     iconUrl: require("./airport.png"),
     iconSize: [28, 28],
   });

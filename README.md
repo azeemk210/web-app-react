@@ -2,6 +2,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Dependencies
+cd my-app\
 npm install react-leaflet leaflet\
 npm install react-leaflet-cluster leaflet
 
