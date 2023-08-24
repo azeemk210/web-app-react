@@ -70,7 +70,7 @@ export default function App() {
   const customIcon = new Icon({
     //iconUrl: require("./image/arhab.jpeg"),
     //iconSize: [38, 58],
-    iconUrl: require("./image/airport.png"),
+    iconUrl: require("./airport.png"),
     iconSize: [28, 28],
   });
   return (
@@ -79,7 +79,8 @@ export default function App() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
       
-      /> 
+      />
+      
 
       <MarkerClusterGroup>
         chunkedLoading
