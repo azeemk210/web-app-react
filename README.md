@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Dependencies
+npm install react-leaflet leaflet
+npm install react-leaflet-cluster leaflet
+
 ## Available Scripts
 
 In the project directory, you can run:
