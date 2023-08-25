@@ -59,6 +59,19 @@ export default function App() {
     "Kansas City International Airport,Kansas City,United States,39.2976,-94.713898",
     "Dane County Regional Truax Field,Madison,United States,43.1399002075195,-89.3375015258789",
     "Dillingham Airport,Dillingham,United States,59.04470062,-158.5050049",
+    "Boone County Airport,Harrison,United States,36.2615013122559,-93.1547012329102",
+    "Boone County Airport,Harrison,United States,36.2615013122559,-93.1547012329102",
+    "Phoenix Sky Harbor International Airport,Phoenix,United States,33.4342994689941,-112.012001037598",
+    "Bangor International Airport,Bangor,United States,44.8073997497559,-68.8281021118164",
+    "Fort Lauderdale Executive Airport,Fort Lauderdale,United States,26.1972999573,-80.1707000732",
+    "East Texas Regional Airport,Longview,United States,32.3839988708496,-94.7115020751953",
+    "Anderson Regional Airport,Andersen,United States,34.4945983887,-82.7093963623",
+    "Spokane International Airport,Spokane,United States,47.6198997497559,-117.533996582031",
+    "North Perry Airport,Hollywood,United States,26.0012,-80.2407",
+    "San Francisco International Airport,San Francisco,United States,37.6189994812012,-122.375",
+    "Cut Bank International Airport,Cutbank,United States,48.6083984375,-112.375999451",
+    "Acadiana Regional Airport,Louisiana,United States,30.0378,-91.883904",
+    "Gainesville Regional Airport,Gainesville,United States,29.6900997162,-82.2717971802",
   ];
   
     const markers = airportData.map((airport) => {
